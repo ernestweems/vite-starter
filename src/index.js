@@ -6,4 +6,4 @@ import('./counter').then(({ initializeCounter }) => {
   initializeCounter();
 });
 
-document.querySelector('h2.counter-title').textContent = '💔💔💔';
+//document.querySelector('h2.counter-title').textContent ='Counter App Widget';
