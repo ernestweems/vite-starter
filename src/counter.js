@@ -1,3 +1,5 @@
+import classes from './counter.module.css';
+
 export const initializeCounter = (doc = globalThis.document) => {
   const countElement = doc.getElementById('count');
   const incrementButton = doc.getElementById('increment');
@@ -7,6 +9,12 @@ export const initializeCounter = (doc = globalThis.document) => {
 
   const render = () => {
     countElement.textContent = count;
+    if (count < 0) {
+      countElement.classList.add(classes.count);
+      import('./banner').then(({ addBanner }) => {
+        addBanner('Yo!');
+      });
+    }
   };
 
   const increment = () => {
