@@ -1,3 +1,4 @@
-.fooBar {
-    text-decoration: underline;
+.bannerText {
+  text-decoration: dotted;
+  color:red;  
 }

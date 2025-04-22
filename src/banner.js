@@ -1,6 +1,7 @@
-import classes from './banner.module.css';
+import { bannerText } from './banner.module.css';
 
 export const addBanner = (text) => {
-  document.querySelector('#content').classList.add(classes.fooBar);
-  document.querySelector('#content').textContent = text;
+  const containter = document.querySelector('#content');
+  containter.classList.add(bannerText);
+  containter.textContent = text;
 };
